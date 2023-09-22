@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "defeatdemon",
+    "slug": "defeatdemon",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ICONS.png",
+    "userInterfaceStyle": "light",
+    "extra": {
+      "GOOGLE_API_KEY": "YOUR_API_KEY",
+      "firebase_cred": "./assets/firebase.json"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.joe_mama_69420.user-app"
+    },"web": {
+      "favicon": "./assets/ICONS.png",
+      "config": {
+        "firebase": {
+          "apiKey": "YOUR-CRED",
+          "authDomain": "YOUR-CRED",
+          "projectId": "YOUR-CRED",
+          "storageBucket": "YOUR-CRED",
+          "messagingSenderId": "YOUR-CRED",
+          "appId": "YOUR-CRED",
+          "measurementId": "YOUR-CRED"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow APP to use your location."
+        }
+     
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": {
+            "ios": "Allow  to access your camera."
+          }
+        }
+      ]
+    ]
+  }
+}
